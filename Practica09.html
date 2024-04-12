@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+    </style>
+    		<link rel="stylesheet" type="text/css" href="style09.css">
+
+    <body1>
+        <form>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Formulario de Calificaciones</title>
+            <link rel="stylesheet" href="style09.css">
+            </head>
+            <body>
+            <h1>Formulario de Calificaciones</h1>
+            <div class="input-group">
+            <form id="formulario">
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" required><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required><br>
+            <label for="Auditoria Informatica">Auditoria Informatica:</label>
+            <input type="number" id="Auditoria Informatica" min="0" max="100" required><br>
+            <label for="Fundamentos de Investigacion">Fundamentos de Investigacion:</label>
+            <input type="number" id="Fundamentos de Investigacion" min="0" max="100" required><br>
+            <label for="Topico de Base de Datos">Topico de Base de Datos:</label>
+            <input type="number" id="Topico de Base de Datos" min="0" max="100" required><br>
+            <label for="Interconectividad de Redes">Interconectividad de Redes:</label>
+            <input type="number" id="Interconectividad de Redes" min="0" max="100" required><br>
+            <label for="Español">Desarrollo de Aplicaciones Web:</label>
+            <input type="number" id="Español" min="0" max="100" required><br>
+            <label style="color: rgb(67, 230, 167)">.</label>
+            <button type="button" style="background: rgb(47, 255, 255);" onclick="calcularPromedio()">Enviar</button>
+            </form>
+            <div id="resultados"></div>
+        </div>
+        </form>
+    </body1>
+
+<script src="calificaciones.js"></script>
+</body>
+</html>

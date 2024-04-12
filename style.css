@@ -1,0 +1,25 @@
+body1 {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 40vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+form {
+border-radius: 1px solid green;
+background-color: grey;
+padding: 20px;
+box-shadow: 0 0 20px 0 green;
+border-radius: 10px;
+margin: 0 auto;
+text-align: center;
+width: 700px;
+
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}

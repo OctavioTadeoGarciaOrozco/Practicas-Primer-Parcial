@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    background-image: url('https://us.123rf.com/450wm/askanchanacharoen/askanchanacharoen2104/askanchanacharoen210400391/167596423-hermosa-nube-abstracta-y-cielo-azul-claro-paisaje-naturaleza-fondo-blanco-y-papel-tapiz-textura.jpg?ver=6'); 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .reloj-digital {
+    font-size: 8rem;
+    margin-right: 20px;
+    border: 15px solid #380661;
+  }
+  
+  .reloj-analogico {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 15px solid #4a0bdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hora, .minuto, .segundo {
+    position: absolute;
+    background-color: #450975;
+  }
+  
+  .hora {
+    height: 40px;
+    width: 6px;
+  }
+  
+  .minuto {
+    height: 60px;
+    width: 4px;
+  }
+  
+  .segundo {
+    height: 70px;
+    width: 4px;
+  }
+  
+  .marcas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .marcas div {
+    position: absolute;
+    background-color: #000;
+    width: 2px;
+    height: 10px;
+    top: 10px;
+    left: calc(50% - 1px);
+    transform-origin: bottom;
+  }
+  
+  .hora-marcador {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background-color: #000;
+    top: 5px;
+    left: calc(50% - 1px);
+    transform-origin: bottom;
+  }
+  
+  @for $i from 1 through 12 {
+    .hora-marcador:nth-child(#{$i}) {
+      transform: rotate(calc(#{$i} * 30deg));
+    }
+  }
+  

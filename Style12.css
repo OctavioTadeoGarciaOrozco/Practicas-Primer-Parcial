@@ -1,0 +1,75 @@
+body {
+  background-color: #0b508e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.registration-form {
+  background-color: #50b6de;
+  padding: 30px;
+}
+
+.event-details {
+  font-family: x-large;
+  background-color: #0ab6bc;
+  padding: 20px;
+}
+
+.confirmation-list {
+  font-family: x-large;
+  background-color: #22b7ce;
+  padding: 50px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #1b94d1;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #eee609;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffffff;
+}
+
+/* Consulta de medios para tabletas */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    width: 80%; /* Por ejemplo, puede ser un ancho del contenedor más pequeño */
+  }
+}
+
+/* Consulta de medios para escritorios */
+@media screen and (min-width: 1025px) {
+  .container {
+    width: 70%; /* Por ejemplo, puede ser un ancho del contenedor más grande */
+  }
+}
